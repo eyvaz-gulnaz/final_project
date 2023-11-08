@@ -1,0 +1,174 @@
+.posts{
+width: 96%;
+margin: 0 auto;
+}
+.all-posts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    width: 100%;
+    color: rgb(80, 79, 79);
+    margin: 2em 0;
+}
+.all-posts p{
+    cursor: pointer;
+}
+.inp-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 22%;
+    height: 100%;
+}
+.fa-xmark, #search{
+    display: none;
+}
+.fa-magnifying-glass{
+    margin-left: auto;
+}
+.lupali{
+    height: 2.5em;
+    display: flex;
+    width: 49%;
+    align-items: center;
+    justify-content: space-between;
+}
+.lupali input{
+    outline: none;
+    border: none;
+    width: 60%;
+    height: 100%;
+    color: rgb(112, 111, 111);
+    font-size: 1.2em;
+}
+.inp-btn button{
+    width: 160px;
+    height: 2.5em;  
+    background-color: white;
+    font-size: 1em;
+    color: rgb(80, 79, 79);
+}
+.posts-down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 4em;
+    margin-bottom: 4em;
+}
+.posts-down .post{
+    background-size:130% 100%;
+    width: 520px;
+    height: 520px;
+}
+.post-text{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.up .left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.post-text .up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 0.9em;
+    height: 3em;
+}
+.down .eye-message{
+    font-size: 0.6em;
+    font-weight: 100;
+    border-top: 1px solid white;
+    padding-top: 1.2em;
+    margin-top: 1.2em;
+}
+.post-text .down{
+    color: white;
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.posts-down .first{
+    background-image: url(https://static.wixstatic.com/media/ea26fd_27fbb74e91a340879209d48e32da60c7~mv2_d_5746_3831_s_4_2.jpg/v1/fill/w_740,h_493,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ea26fd_27fbb74e91a340879209d48e32da60c7~mv2_d_5746_3831_s_4_2.jpg);
+}
+.posts-down .second {
+    background-image: url(https://static.wixstatic.com/media/ea26fd_6c7c4a86d7db4b609d0ac758cda7d841~mv2_d_5741_3827_s_4_2.jpg/v1/fill/w_740,h_493,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ea26fd_6c7c4a86d7db4b609d0ac758cda7d841~mv2_d_5741_3827_s_4_2.jpg);
+}
+.posts-down .third{
+    background-image: url(https://static.wixstatic.com/media/ea26fd_878cfc419b7148619de4c5bf375de474~mv2_d_3461_2308_s_2.jpg/v1/fill/w_740,h_493,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ea26fd_878cfc419b7148619de4c5bf375de474~mv2_d_3461_2308_s_2.jpg);
+}
+.posts-down .fourth {
+    background-image: url(https://static.wixstatic.com/media/ea26fd_60f54c4766af48639690489f2c6fbcf9~mv2_d_5210_3473_s_4_2.jpg/v1/fill/w_740,h_493,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ea26fd_60f54c4766af48639690489f2c6fbcf9~mv2_d_5210_3473_s_4_2.jpg);
+}
+.posts-down .fifth {
+    background-image: url(https://static.wixstatic.com/media/ea26fd_254b324adefe4197a290d55c058f9e9c~mv2_d_5727_3818_s_4_2.jpg/v1/fill/w_740,h_493,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ea26fd_254b324adefe4197a290d55c058f9e9c~mv2_d_5727_3818_s_4_2.jpg);
+}
+.posts-down .sixth{
+    background-image: url(https://static.wixstatic.com/media/ea26fd_e06893203c2c43c1bea78574970f191f~mv2_d_5746_3831_s_4_2.jpg/v1/fill/w_740,h_493,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ea26fd_e06893203c2c43c1bea78574970f191f~mv2_d_5746_3831_s_4_2.jpg);
+}
+
+.black h2 {
+    font-size: 3.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    line-height: 1.3em
+}
+.black p {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 44%;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.2em
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* responsive black */
+    .black h2 {
+        font-size: 2.7em;
+        font-weight: 100;
+    }
+    .black p {
+        width: 80%;
+    }
+    .black {
+        width: 100%;
+    }
+
+    /* responsive all posts input part*/
+        .all-posts {
+            color: rgb(253, 253, 253);
+            padding: 0 1em;
+            background-color: black;
+        }
+        .inp-btn {
+            width: 65%;
+        }
+        .lupali {
+            width: 60%;
+        }
+        .lupali input {
+            padding: 0 10px;
+            color: rgb(253, 253, 247);
+            background-color: black;
+        }
+        .inp-btn button {
+            width: 110px;
+            margin-left: 1em;
+            background-color: black;
+            font-size: 0.8em;
+            color: rgb(253, 253, 253);
+        }
+}

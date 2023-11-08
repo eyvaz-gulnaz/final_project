@@ -1,0 +1,246 @@
+.black h2{
+    font-size:3.4em; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 200; 
+    line-height: 1.3em;
+}
+.black{
+    margin: 1em auto 2em;
+    height: 200px;
+}
+.customer-service{
+    border: 1px solid black; 
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    margin: 0 auto;
+    height: auto;
+}
+.service-inside{
+    width: 50%;
+    height: 63vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.insidep{
+        white-space: pre-wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: start;
+        color: rgb(46, 50, 56);
+        font-family: Arial, Helvetica, sans-serif;
+        width: 47%;
+        height: 55%;
+        line-height: 1.5em;
+        font-size: 1.1em;
+}
+.insidep-basliq {
+    font-size: 2.5em; 
+    font-weight: 100; 
+    color: rgb(54, 53, 53);
+}
+.num-email{
+    height: 16%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#contact-inf{
+color: white;
+width: 50%; 
+display: flex; 
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: inherit;
+background-color: #2f4f4f;
+}
+.contact-inf form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    width: 48%;
+    align-items: center;
+}
+.inputs{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.inp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    width: 50%;
+    height: 90px;
+}
+.textar{
+    width: 100%;
+    height: 210px;
+    font-size: 1.2em;
+}
+.inp input, .inp textarea{
+    background-color: #2f4f4f;
+    width: 100%;
+    height: 60px;
+    border: 1px solid white;
+    caret-color: white;
+    outline: white;
+    padding: 0 1.2em;
+    color: white;
+    border-collapse: collapse;
+}
+.textar textarea {
+    height: 120px;
+    margin-top: 10px;
+    border-bottom: none;
+    padding: 1.2em;
+}
+.inp input:hover {
+    background-color: rgb(80, 79, 79);
+}
+.textar input:hover{
+    color: black;
+    background-color: white;
+}
+/* map */
+.mapouter {
+    text-align: right;
+    width: 96%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 400px;
+}
+
+.gmap_iframe {
+width: 100%;
+height: 400px !important;
+}
+
+/* stores */
+#stores{
+    width: 96%;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    border: 1px solid black;
+    height: 340px;
+    display: flex;
+    border-right: none;
+}
+.store{
+    width: 33.333%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+}
+.store-inside{
+    color: rgb(72, 72, 72);
+    font-size: 1.2em;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.store-inside h3{
+    font-size: 2em;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    /* responsive black */
+    .black h2 {
+        font-size: 3em;
+        font-weight: 100;
+    }    
+    .black {
+        height: 150px;
+    }
+
+    /* responsive main part customer service */
+        .customer-service {
+            flex-direction: column;
+            height: auto;
+        }
+        .service-inside {
+            width: 100%;
+            height: inherit;
+        }
+        .insidep {
+            text-align: center;
+            width: 100%;
+            height: 45vh;
+            font-size: 1.2em;
+        }
+        .insidep-basliq {
+            font-size: 2em;
+        }
+        #contact-inf {
+            width: 100%;
+            height: 90vh;
+            padding: 1em 0;
+        }
+        .contact-inf  form {
+            height: 100%;
+            width: 100%;
+        }
+        .inputs {
+            flex-direction: column;
+            justify-content: space-between;
+            height: 220px;
+            width: 88vw;
+        }
+        .inp { 
+            width: 100%;
+        }       
+        .textar {
+            width: 100%;
+            height: 260px;
+        }
+
+        /* responsive map */
+        .mapouter, .gmap_canvas {
+            height: 750px;
+        }
+        .gmap_iframe {
+            height: 750px !important;
+        }
+
+        /* stores */
+        #stores {
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 0;
+            border: none;
+            height: auto;
+        }
+        .store {
+            width: 100%;
+            height: 340px;
+            border-right: none;
+            border-bottom: 1px solid black;
+        }
+        .store-inside {
+            height: 80%;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        footer{
+            margin-top: 0;
+        }
+}   

@@ -1,0 +1,234 @@
+/* bestsellers */
+.bestsellers {
+    margin: 2.5em auto;
+    width: 96%;
+    height: 180vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+.bestseller1 {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bestselleri {
+    margin: 0 auto;
+    width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.bestselleri .new{
+    width: 22%;
+    height: 85% ;
+}
+.sale-file{
+    gap: 10px;
+    height: 75vh;
+}
+.sale-file .bestseller1 {
+    width: 24.5%;
+    height: 95%;
+}
+.bestseller {
+    width: 100%;
+    height: 85%;
+    background-size: 100% 100%;
+}
+.bestseller span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #2f4f4f;
+    padding: 0 10px;
+    height: 25px;
+    width: 22%;
+}
+.bestseller1 p {
+    text-align: center;
+    line-height: 40px;
+}
+.bestseller1 :nth-child(2) {
+    padding-top: 10px;
+    font-size: 1.8em;
+    color: rgb(61, 60, 60);
+}
+
+/* about page */
+.about-book{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 96%; 
+    margin: 4em auto;
+    height: 65vh;
+}
+.about-book p{
+    align-self: center;     
+    margin: 0 auto; 
+    text-align: start; 
+    color: rgb(46, 50, 56); 
+    font-family: Arial, Helvetica, sans-serif; 
+    width: 30%; 
+    line-height:1.5em; 
+    font-size:1.1em
+}
+.about-book img {
+    height: 100%;
+}
+
+/* shipping page */
+.shipping-out {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    margin: 4em auto;
+}
+.shipping{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+    border: 1px solid black;
+}
+.second-shipping{
+    border-right: none ;
+}
+.shipping-inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: start;
+    width: 50%;
+    height: 65%;
+}
+.payment{
+    padding-bottom: 220px;
+}
+.shipping-inside p{
+    text-align: start; 
+    color: rgb(46, 50, 56); 
+    font-family: Arial, Helvetica, sans-serif; 
+    width: 100%; 
+    line-height:1.5em; 
+    font-size:1.1em
+}
+.shipping-inside .policy{
+    font-size: 2.3em;
+    font-size: 100;
+    color: rgb(46, 50, 56);
+}
+.shipping-inside ul{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+}
+
+.black h2 {
+    font-size:3.4em; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    line-height: 1.3em
+}
+.black p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 44%;
+    text-align: center; 
+    line-height:1.5em; 
+    font-size:1.2em
+}
+
+@media only screen and (max-width: 768px) {
+    
+    /* responsive black */
+        .black h2 {
+            font-size: 2.7em;
+            font-weight: 100;
+        }
+        .black p {
+            width: 80%;
+        }
+        .black{
+            width: 100%;
+        }
+    
+    /* bestsellers */
+    .bestsellers, .bestselleri {
+        flex-direction: column;
+        height: auto;
+        flex-wrap: nowrap;
+    }
+    .bestseller1, .sale-file .bestseller1, .bestselleri .new {
+        width: 85%;
+        height: 65vh;       
+    }
+    .sale-file {
+        gap: 10px;
+    }
+    .bestselleri{
+        margin: 2em auto;
+    }
+    
+    /* responsive about page */
+    .about-book {
+        border: none;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0 auto;
+        height: 130vh;;
+    }
+        .about-book img {
+            height: 400px;
+        }
+    .about-book p {
+        margin: 2em auto;
+        text-align: center;
+        width: 90%;
+        line-height: 2em;
+        height: 75vh;
+        font-size: 1.2em
+    }
+
+         /* responsive shipping page */
+        .shipping-out {
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .shipping {
+            width: 90%;
+            height:480px;
+            border: none;
+        }
+        .shipping-inside {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+        }
+        .shipping-inside p {
+            text-align: center;
+            line-height: 1.4em;
+            font-size: 1.2em;
+        }
+        .shipping-inside .policy {
+            font-size: 2em;
+        }
+        .payment {
+            padding-bottom: 0;
+        }
+        .payments{
+            height: 140px;
+        }
+    }
+
+

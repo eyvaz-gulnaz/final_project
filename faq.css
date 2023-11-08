@@ -1,0 +1,116 @@
+.black h2{
+    font-size: 3.4em;
+    font-weight: 200;
+    line-height: 1.3em;
+    letter-spacing: 4px
+}
+.faq-up{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 10px;
+    justify-content: center;
+}
+.faq-up h4 {
+    margin: 0 auto;
+    font-size: 1.5em;
+    font-weight: 100;
+    color: gray;
+    text-align: center;
+    align-self: center;
+    width: 60%;
+}
+.fa-xmark, .lupali input{
+    display: none;
+}
+.faq-up .lupali {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    padding: 6px;
+}
+.lupali input {
+    border: none;
+    outline: none;
+    color: rgb(112, 111, 111);
+    font-size: 1.2em;
+    width: 50%;
+}
+
+.faq-center{
+    width: 50%;
+    margin: 2em auto;
+    padding-left: 10px;
+}
+.faq-settings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+.faq-questions p, .hidden ol {
+    color: rgb(97, 97, 97); 
+    padding: 1em 0;
+}
+.hidden ol {
+    padding-left: 20px;
+}
+.faq-social{
+    color: black;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+}
+.set, .gen {
+    cursor: pointer;
+}
+.hidden, .settings-inside{
+    display: none;
+}
+.faq-questions{
+    padding: 1.5em 0;
+    border-bottom: 1px solid gray ;
+}
+.fa-angle-down, .fa-angle-up{
+    font-size: 16px; 
+}
+.faq-questions h4{
+    font-size: 1.7em;
+    color: rgb(97, 97, 97);
+    font-weight: 100;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .faq-settings{
+        padding: 1em 0;
+        width: 50%;
+    }
+    .gen, .set{
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 1px 3px 5px gray;
+    }
+    .gen:hover, .set:hover {
+        transform: scale(1.2);
+    }
+    .faq-center{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .faq-down{
+        width: 100%;
+    }
+    .faq-up{
+        width: 100%;
+        flex-direction: column;
+    }
+    #basliq{
+        font-size: 1.8em;
+        color: rgb(91, 90, 90);
+    }
+}
